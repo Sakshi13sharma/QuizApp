@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="com.example.sakshiquiz.quiz.DeleteActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.5"
+        android:paddingTop="15dp"
+        android:text="Do you want to delete"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="15dp"
+        android:layout_weight="0.10"
+        android:id="@+id/num"
+        android:hint="Question number"/>
+
+    <Button
+        android:id="@+id/deleteme"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.10"
+        android:onClick="onclick"
+        android:paddingTop="15dp"
+        android:text="Delete Question" />
+
+</LinearLayout>
